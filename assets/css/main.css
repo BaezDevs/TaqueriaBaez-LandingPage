@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Anton";
+    src: url("../fonts/Anton-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Obviously";
+    src: url("../fonts/obviouslydemo-widebold-webfont.woff") format("woff");
+}
+
+html {
+    font-family: Anton, sans-serif !important;
+}
