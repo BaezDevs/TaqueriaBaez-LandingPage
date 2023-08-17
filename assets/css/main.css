@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Anton";
+    src: url("../fonts/Anton-Regular.ttf");
+}
+
+@layer base {
+
+    html{
+        font-family: Anton, sans-serif !important;
+    }
+
+}
