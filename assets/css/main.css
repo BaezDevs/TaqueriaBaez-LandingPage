@@ -11,3 +11,23 @@
 html {
     font-family: Anton, sans-serif !important;
 }
+
+body {
+    background-color: #111827;
+}
+
+.square {
+    border-radius: 0 !important;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.border-left {
+    border-left: 1px solid #e5e7eb;
+}
+
+.border-right {
+    border-right: 1px solid #e5e7eb;
+}

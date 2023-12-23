@@ -3,55 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>TaqueriaBaez</title>
 </head>
-<body class="bg-gray-100">
+<body>
+<header>
 
-<!-- Home Section -->
-<div class="bg-gray-900 flex flex-col items-center justify-center">
-    <img src="./assets/img/logo.png" alt="TaqueriaBaez" class="pt-20 mb-8 h-30">
-    <h1 class="text-8xl text-gray-300 font-bold mb-8">
-        TAQUERIA BAEZ
-    </h1>
-    <p class="text-xl text-gray-300 font-bold mb-8">1602 NW 21ST ST, FORT WORTH</p>
-    <p class="text-4xl text-gray-300 font-bold mb-10">TEL: 682-990-3199</p>
-
-    <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
-        <div class="flex flex-col mb-6 md:mb-0 pe-10">
-            <button class="bg-gray-300 text-gray-900 text-xl font-bold py-2 hover:bg-gray-400 px-20 py-4 mb-4">MENU</button>
-            <button class="bg-gray-300 text-gray-900 text-xl font-bold py-2 hover:bg-gray-400 px-20 py-4 mb-4">CATERING</button>
+    <nav class="deep-purple">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <img src="assets/img/logo.png" alt="Logo" height="64">
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="menu.html">Menu<i class="material-icons right">restaurant_menu</i></a></li>
+                <li><a href="contact.html">Contact<i class="material-icons right">contact_page</i></a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="border-l-2 border-white pl-10">
-            <div class="mb-4">
-                <h2 class="text-2xl text-bold text-gray-300 text-center">Hours</h2>
-                <p class="text-xl text-gray-300">THU ... 06:00 pm - 11:00 pm</p>
-                <p class="text-xl text-gray-300">FRI ... 06:00 pm - 11:00 pm</p>
-                <p class="text-xl text-gray-300">SAT ... 06:00 pm - 11:00 pm</p>
-                <p class="text-xl text-gray-300">SUN ... 06:00 pm - 11:00 pm</p>
+</header>
+
+<main>
+    <section class="white-text center-align mt-6">
+        <img src="assets/img/logo.png" alt="Logo">
+        <h1 class="mb-1">TAQUERIA BAEZ</h1>
+        <h4 class="mt-1">1602 NW 21ST ST, FORT WORTH</h4>
+        <h2>TEL: 682-230-7061</h2>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col s6 border-right">
+                    <div class="row">
+                        <div class="col s12 mx-6 my-3">
+                            <a class="btn-large square full-width" href="menu.html">MENU</a>
+                        </div>
+                        <div class="col s12 mx-6 my-3">
+                            <a class="btn-large square full-width" href="">CATERING</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="center-align white-text">
+
+                        <h6>Hours</h6>
+                        <p>THU ... 06:00 pm - 11:00 pm</p>
+                        <p>FRI ... 06:00 pm - 11:00 pm</p>
+                        <p>SAT ... 06:00 pm - 11:00 pm</p>
+                        <p>SUN ... 06:00 pm - 11:00 pm</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+    <section>
+
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="assets/img/champurrado.jpg"></a>
+            <a class="carousel-item" href="#two!"><img src="assets/img/tapatios.jpg"></a>
+            <a class="carousel-item" href="#three!"><img src="assets/img/tacos.jpg"></a>
+        </div>
+
+    </section>
+</main>
 
 <!-- Carousel Section -->
 <!-- Swiper -->
 <div class="swiper mySwiper">
     <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="assets/img/atole.jpg" alt="Image 1"></div>
-      <div class="swiper-slide"><img src="assets/img/tacospapa.jpg" alt="Image 2"></div>
-      <div class="swiper-slide"><img src="assets/img/tacos.jpg" alt="Image 1"></div>
-      <div class="swiper-slide"><img src="assets/img/Two-Chickens.jpg" alt="Image 2"></div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img class="h-auto max-w-lg rounded-lg" src="assets/img/champurrado.jpg" alt="Image 1">
+        </div>
+        <div class="swiper-slide">
+            <img class="h-auto max-w-lg rounded-lg" src="assets/img/tapatios.jpg" alt="Image 2">
+        </div>
+        <div class="swiper-slide">
+            <img class="h-auto max-w-lg rounded-lg" src="assets/img/tacos.jpg" alt="Image 1">
+        </div>
+        <!--      <div class="swiper-slide"><img src="assets/img/Two-Chickens.jpg" alt="Image 2"></div>-->
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
-  </div>
-  
-  
+</div>
+
 
 <!-- Footer -->
 <footer class="bg-gray-900 text-gray-300 text-center p-4">
@@ -59,36 +100,8 @@
 </footer>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-<!-- Include Swiper's JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper('.mySwiper', {
-    slidesPerView: 4,
-    spaceBetween: 0,
-    loop: true,
-    autoplay: {
-      delay: 50,
-      disableOnInteraction: false,
-    },
-    speed: 9000, // Transition speed in milliseconds
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      600: {
-        slidesPerView: 1,
-        spaceBetween: 0
-      },
-      1024: {
-        slidesPerView: 2,
-        spaceBetween: 0
-      }
-    }
-  });
-</script>
-
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
