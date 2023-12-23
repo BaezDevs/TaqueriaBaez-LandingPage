@@ -1,29 +1,94 @@
-<!doctype html>
-<html lang="eng">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>TaqueriaBaez</title>
-    <link rel="stylesheet" href="./assets/css/main.min.css">
 </head>
-<body>
-<nav class="bg-white dark:bg-black w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://www.taqueriabaez.com" class="flex items-center">
-            <img src="./assets/img/logo.png" class="h-20 mr-3" alt="TaqueriaBaez Logo">
-            <span class="self-center text-5xl font-semibold whitespace-nowrap dark:text-white">TaqueriaBaez</span>
-        </a>
+<body class="bg-gray-100">
+
+<!-- Home Section -->
+<div class="bg-gray-900 flex flex-col items-center justify-center">
+    <img src="./assets/img/logo.png" alt="TaqueriaBaez" class="pt-20 mb-8 h-30">
+    <h1 class="text-8xl text-gray-300 font-bold mb-8">
+        TAQUERIA BAEZ
+    </h1>
+    <p class="text-xl text-gray-300 font-bold mb-8">1602 NW 21ST ST, FORT WORTH</p>
+    <p class="text-4xl text-gray-300 font-bold mb-10">TEL: 682-990-3199</p>
+
+    <div class="flex flex-col md:flex-row justify-between items-center md:items-start">
+        <div class="flex flex-col mb-6 md:mb-0 pe-10">
+            <button class="bg-gray-300 text-gray-900 text-xl font-bold py-2 hover:bg-gray-400 px-20 py-4 mb-4">MENU</button>
+            <button class="bg-gray-300 text-gray-900 text-xl font-bold py-2 hover:bg-gray-400 px-20 py-4 mb-4">CATERING</button>
+        </div>
+
+        <div class="border-l-2 border-white pl-10">
+            <div class="mb-4">
+                <h2 class="text-2xl text-bold text-gray-300 text-center">Hours</h2>
+                <p class="text-xl text-gray-300">THU ... 06:00 pm - 11:00 pm</p>
+                <p class="text-xl text-gray-300">FRI ... 06:00 pm - 11:00 pm</p>
+                <p class="text-xl text-gray-300">SAT ... 06:00 pm - 11:00 pm</p>
+                <p class="text-xl text-gray-300">SUN ... 06:00 pm - 11:00 pm</p>
+            </div>
+        </div>
     </div>
-</nav>
-<main class="max-h-screen">
-    <section>
-        <h1 class="text-8xl">
-            TaqueriaBaez
-        </h1>
-    </section>
-</main>
+</div>
+
+<!-- Carousel Section -->
+<!-- Swiper -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="assets/img/atole.jpg" alt="Image 1"></div>
+      <div class="swiper-slide"><img src="assets/img/tacospapa.jpg" alt="Image 2"></div>
+      <div class="swiper-slide"><img src="assets/img/tacos.jpg" alt="Image 1"></div>
+      <div class="swiper-slide"><img src="assets/img/Two-Chickens.jpg" alt="Image 2"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+  
+  
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 text-center p-4">
+    <p>&copy; 2023 TaqueriaBaez. All rights reserved.</p>
+</footer>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+<!-- Include Swiper's JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper('.mySwiper', {
+    slidesPerView: 4,
+    spaceBetween: 0,
+    loop: true,
+    autoplay: {
+      delay: 50,
+      disableOnInteraction: false,
+    },
+    speed: 9000, // Transition speed in milliseconds
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 0
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
