@@ -3,86 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/css/materialize.min.css">
+    <title>Taqueria Baez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>TaqueriaBaez</title>
 </head>
 <body>
-<header>
-
-    <nav class="transparent">
-        <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo">
-                <img src="assets/img/logo.png" alt="Logo" height="64">
-            </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="menu.html">Menu<i class="material-icons right">restaurant_menu</i></a></li>
-                <li><a href="contact.html">Contact<i class="material-icons right">contact_page</i></a></li>
-            </ul>
-        </div>
-    </nav>
-
-</header>
-
-<main>
-    <section class="white-text center-align mt-6">
-        <img src="assets/img/logo.png" alt="Logo">
-        <h1 class="mb-1">TAQUERIA BAEZ</h1>
-        <h4 class="mt-1">1602 NW 21ST ST, FORT WORTH</h4>
-        <h2>TEL: 682-230-7061</h2>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col s6 border-right">
-                    <div class="row">
-                        <div class="col s12 mx-6 my-3">
-                            <a class="btn-large square full-width" href="menu.html">MENU</a>
-                        </div>
-                        <div class="col s12 mx-6 my-3">
-                            <a class="btn-large square full-width" href="">CATERING</a>
-                        </div>
-                    </div>
+    <div class="container">
+        <!-- Navigation with Logo and Title -->
+        <nav class="main-nav">
+            <div class="nav-logo-title">
+                <div class="logo">
+                    <img src="assets/img/logo.png" alt="Taqueria Baez Logo">
                 </div>
-                <div class="col s6">
-                    <div class="center-align white-text">
+                <div class="title-info">
+                    <h1>Taqueria Baez</h1>
+                    <p>Authentic Mexican Street Tacos</p>
+                    <p class="address">1602 NW 21ST ST, FORT WORTH • TEL: 682-230-7061</p>
+                </div>
+            </div>
+        </nav>
 
-                        <h6>Hours</h6>
-                        <p>THU ... 06:00 pm - 11:00 pm</p>
-                        <p>FRI ... 06:00 pm - 11:00 pm</p>
-                        <p>SAT ... 06:00 pm - 11:00 pm</p>
-                        <p>SUN ... 06:00 pm - 11:00 pm</p>
+        <!-- Hours Section -->
+        <section class="hours-section">
+            <div class="section-title">
+                <h2>Hours</h2>
+            </div>
+            <div class="hours-grid">
+                <div class="day-hours">
+                    <p class="day">THURSDAY</p>
+                    <p class="hours">06:00 pm - 11:00 pm</p>
+                </div>
+                <div class="day-hours">
+                    <p class="day">FRIDAY</p>
+                    <p class="hours">06:00 pm - 11:00 pm</p>
+                </div>
+                <div class="day-hours">
+                    <p class="day">SATURDAY</p>
+                    <p class="hours">06:00 pm - 11:00 pm</p>
+                </div>
+                <div class="day-hours">
+                    <p class="day">SUNDAY</p>
+                    <p class="hours">06:00 pm - 11:00 pm</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Carousel -->
+        <section class="image-carousel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/tacos.jpg" alt="Authentic Mexican Tacos">
+                        <div class="caption">Our Famous Street Tacos</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/tacospapa.jpg" alt="Potato Tacos">
+                        <div class="caption">Tacos de Papa</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/atole.jpg" alt="Mexican Hot Drink">
+                        <div class="caption">Traditional Atole</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/mexicanwoman.jpeg" alt="Traditional Mexican Chef">
+                        <div class="caption">Authentic Family Recipes</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/Two-Chickens.jpg" alt="Chickens">
+                        <div class="caption">Fresh Ingredients</div>
+                    </div>
+                    <!-- Duplicate slides for smoother infinite loop -->
+                    <div class="swiper-slide">
+                        <img src="assets/img/tacos.jpg" alt="Authentic Mexican Tacos">
+                        <div class="caption">Our Famous Street Tacos</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/tacospapa.jpg" alt="Potato Tacos">
+                        <div class="caption">Tacos de Papa</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/atole.jpg" alt="Mexican Hot Drink">
+                        <div class="caption">Traditional Atole</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/mexicanwoman.jpeg" alt="Traditional Mexican Chef">
+                        <div class="caption">Authentic Family Recipes</div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/Two-Chickens.jpg" alt="Chickens">
+                        <div class="caption">Fresh Ingredients</div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
+        </section>
 
-        <div class="carousel">
-            <a class="carousel-item" href="#one!"><img src="assets/img/champurrado.jpg"></a>
-            <a class="carousel-item" href="#two!"><img src="assets/img/tapatios.jpg"></a>
-            <a class="carousel-item" href="#three!"><img src="assets/img/tacos.jpg"></a>
-        </div>
+        <!-- Menu and Photo Section -->
+        <section class="cta-section">
+            <div class="cta-block">
+                <div class="cta-content">
+                    <h2>View Our Menu</h2>
+                    <p class="subtitle">Authentic Mexican Cuisine</p>
+                    <div class="separator"></div>
+                    <p class="description">Discover our authentic Mexican dishes made with traditional recipes passed down through generations. From street tacos to homemade salsas, each bite brings the flavors of Mexico to Fort Worth.</p>
+                    <div class="button-group">
+                        <a href="assets/menu.pdf" class="btn-cta btn-menu" target="_blank">View Menu PDF</a>
+                        <a href="tel:6822307061" class="btn-cta btn-call">Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="photo-block">
+                <img src="assets/img/amlo.jpg" alt="AMLO" class="feature-photo">
+            </div>
+        </section>
 
-    </section>
-</main>
+        <!-- Social Media Section -->
+        <section class="social-section">
+            <h2>Follow Us</h2>
+            <p>Stay connected and see what's cooking at Taqueria Baez.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </section>
+    </div>
 
-
-
-<!-- Footer -->
-<footer class="bg-gray-900 text-gray-300 text-center p-4">
-    <p>&copy; 2023 TaqueriaBaez. All rights reserved.</p>
-</footer>
-
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.0.3-alpha/dist/js/materialize.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
