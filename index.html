@@ -1,25 +1,145 @@
-<!doctype html>
-<html lang="eng">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet"/>
-    <title>TaqueriaBaez</title>
-    <link rel="stylesheet" href="./assets/css/main.min.css">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Taqueria Baez is moving to a new location at 2020 Azle Ave in Fort Worth, TX. Visit us for fresh, authentic Mexican tacos!"/>
+    <meta name="keywords"
+          content="Taqueria Baez, Mexican food, tacos, Fort Worth, food truck, authentic Mexican cuisine"/>
+    <meta name="author" content="Taqueria Baez"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="theme-color" content="#6a1b9a"/>
+
+    <!-- Local SEO & Geotagging -->
+    <meta name="geo.region" content="US-TX"/>
+    <meta name="geo.placename" content="Fort Worth"/>
+    <!-- Prevents duplicate content issues -->
+    <link rel="canonical" href="https://www.taqueriabaez.com/"/>
+
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16x16.png">
+    <link rel="manifest" href="./assets/img/site.webmanifest">
+    <title>Taqueria Baez | We Are Moving</title>
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@500;600&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Food Truck",
+            "name": "Taqueria Baez",
+            "image": "https://taqueriabaez.com/assets/img/logo.png",
+            "url": "https://www.taqueriabaez.com/",
+            "telephone": "+16822307062",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "2020 Azle Ave",
+                "addressLocality": "Fort Worth",
+                "addressRegion": "TX",
+                "postalCode": "76164",
+                "addressCountry": "US"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 32.795,
+                "longitude": -97.366
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "18:00",
+                "closes": "23:00"
+            },
+            "servesCuisine": "Mexican",
+            "priceRange": "$"
+        }
+    </script>
 </head>
 <body>
 
-<div class="min-h-screen bg-gray-900 flex flex-col items-center justify-center">
-    <img src="./assets/img/logo.png" alt="TaqueriaBaez" class="mb-8 h-30">
-    <h1 class="text-5xl text-white font-bold mb-8 animate-pulse">
-        Coming Soon
-    </h1>
-    <p class="text-white text-lg mb-8">
-        We're working hard to bring you something amazing. Stay tuned!
-    </p>
-</div>
+<main class="container valign-wrapper">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <section class="row">
+        <div class="col s12 l8">
+            <h3 class="badge-inline">
+                <i class="material-icons large">local_fire_department</i>
+                <span>We’re moving</span>
+            </h3>
+            <h1>Fresh tacos, new corner. Taqueria Baez is rolling to 2020 Azle ave in Fort Worth, TX.</h1>
+            <h5>
+                Pin the new spot, call the truck, and come try us at our new location.
+            </h5>
+            <div class="flex wrap mt-4 g-3">
+                <a class="btn-large btn-primary"
+                   href="https://www.google.com/maps/dir/?api=1&destination=2020%20azle%20ave%20fort%20worth%20tx"
+                   target="_blank" rel="noopener">Get
+                    directions</a>
+                <a class="btn-large btn-ghost " href="tel:+16822307062">Call the truck</a>
+            </div>
+        </div>
+
+        <div class="card col s12 l4">
+            <div class="card-content p-0">
+                <span class="card-title center-align">New address</span>
+                <div class="row g-1">
+                    <div class="col s12">
+                        <div class="card-panel">
+                            <div class="badge-inline"><i class="material-icons tiny">pin_drop</i>Location</div>
+                            <h5 class="text-primary-2">2020 Azle Ave.</h5>
+                            <p>Fort Worth, TX</p>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="card-panel">
+                            <div class="badge-inline"><i class="material-icons tiny">event</i> Goes live</div>
+                            <h5><strong>Thursday, December 4</strong></h5>
+                        </div>
+                    </div>
+                    <div class="col s12">
+                        <div class="card-panel">
+                            <div class="badge-inline"><i class="material-icons tiny">schedule</i> Hours</div>
+                            <h5><strong>Thursday - Sunday</strong></h5>
+                            <p>6:00 PM – 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<footer class="page-footer mt-0 pt-2">
+    <div class="container">
+        <h5>Taqueria Baez</h5>
+        <p>Where every salsa tells a spicy story!</p>
+    </div>
+    <div class="footer-copyright p-0">
+        <div class="container center">&copy; 2025 Taqueria Baez LLC</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@materializecss/materialize@2.2.2/dist/js/materialize.min.js"></script>
 </body>
 </html>
